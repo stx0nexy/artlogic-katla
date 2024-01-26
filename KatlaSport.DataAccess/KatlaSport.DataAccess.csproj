@@ -73,6 +73,10 @@
     <Compile Include="Migrations\202401261604299_AddCategoryDescription.designer.cs">
       <DependentUpon>202401261604299_AddCategoryDescription.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202401262021538_AddProductDescriptionManCodePrice.cs" />
+    <Compile Include="Migrations\202401262021538_AddProductDescriptionManCodePrice.designer.cs">
+      <DependentUpon>202401262021538_AddProductDescriptionManCodePrice.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -89,6 +93,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202401261604299_AddCategoryDescription.resx">
       <DependentUpon>202401261604299_AddCategoryDescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202401262021538_AddProductDescriptionManCodePrice.resx">
+      <DependentUpon>202401262021538_AddProductDescriptionManCodePrice.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
