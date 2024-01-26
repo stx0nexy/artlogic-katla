@@ -17,6 +17,9 @@ namespace KatlaSport.Services.ProductManagement
             RuleFor(r => r.CategoryId).GreaterThan(0);
 
             // TODO STEP 2 - Add rules for "Description", "ManufacturerCode" and "Price" here.
+            RuleFor(r => r.Description).Length(0, 300);
+            RuleFor(r => r.ManufacturerCode).Length(4, 10);
+            RuleFor(r => r.Price).GreaterThanOrEqualTo(0);
         }
     }
 }
