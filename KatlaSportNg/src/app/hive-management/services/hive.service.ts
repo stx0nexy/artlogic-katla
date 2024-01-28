@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 import { Hive } from '../models/hive';
 import { HiveListItem } from '../models/hive-list-item';
 import { HiveSectionListItem } from '../models/hive-section-list-item';
+import { HiveSection } from '../models/hive-section';
 
 @Injectable({
   providedIn: 'root'
@@ -39,6 +40,6 @@ export class HiveService {
   }
 
   setHiveStatus(hiveId: number, deletedStatus: boolean): Observable<Object> {
-    return null;
+    return this.http.put<Object>(`${this.url}${hiveId}/status/${deletedStatus}`, null);
   }
 }
