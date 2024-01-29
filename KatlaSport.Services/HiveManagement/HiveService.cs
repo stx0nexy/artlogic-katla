@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 using AutoMapper;
 using KatlaSport.DataAccess;
 using KatlaSport.DataAccess.ProductStoreHive;
-using KatlaSport.Services.CatalogueManagement;
 using DbHive = KatlaSport.DataAccess.ProductStoreHive.StoreHive;
 
 namespace KatlaSport.Services.HiveManagement
@@ -110,7 +109,7 @@ namespace KatlaSport.Services.HiveManagement
 
             var dbHive = dbHives[0];
             if (dbHive.IsDeleted == false)
-            {
+             {
                 throw new RequestedResourceHasConflictException();
             }
 
